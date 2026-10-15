@@ -22,7 +22,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Sample Movie Database
+# Sample Movie Database (Keys use underscores instead of spaces for valid command registration)
 MOVIES = {
     "inception": {
         "title": "Inception (2010)",
@@ -38,7 +38,7 @@ MOVIES = {
         "description": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot is tasked to pilot a spacecraft to find a new planet for humans.",
         "about": "Directed by Christopher Nolan, featuring an iconic score by Hans Zimmer."
     },
-    "the dark knight": {
+    "the_dark_knight": {
         "title": "The Dark Knight (2008)",
         "genre": "Action / Crime",
         "rating": "9.0/10",
@@ -160,3 +160,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+                                
