@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: movie-recommendation-bot
+    env: python
+    region: ohio
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
